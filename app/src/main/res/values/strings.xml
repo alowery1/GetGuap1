@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="get_guap">Get Guap</string>
+    <string name="track_spendings">Track Spendings</string>
+    <string name="calculate_net_income">Calculate Net Income</string>
+    <string name="budget_planner">Budget Planner</string>
+    <string name="financial_terms">Financial Terms</string>
+    <string name="hello">Hello</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_screen3">screen3</string>
+    <string name="title_activity_trackscreen">trackscreen</string>
+    <string name="back2"><![CDATA[<-]]></string>
+    <string name="definition_definition_definition_definition_definition_definition_definition_definition">Definition Definition Definition Definition Definition Definition Definition Definition</string>
+    <string name="word_word_word_word_word_word_word_word">Word Word Word Word Word Word Word Word</string>
+    <string name="finance">Finance</string>
+    <string name="net_income_calculator">Net Income Calculator</string>
+    <string name="enter_your_salary">Enter Your Salary</string>
+    <string name="enter_your_state">Enter Your State</string>
+    <string name="display_net_income_here">Display Net Income Here</string>
+    <string name="user_s_state">User\'s State</string>
+    <string name="user_s_salary">User\'s Salary</string>
+    <string name="your_net_income_is">Your Net Income is:</string>
+    <string name="notes_on_budget_will_be_string_display_net_income_here">Notes on Budget will be @string/display_net_income_here</string>
+    <string name="budget_spendings">Budget Spendings</string>
+    <string name="details_on_budget_will_be_string_display_net_income_here">Details on budget will be @string/display_net_income_here</string>
+
+</resources>

@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
     public void openScreenBud(){
         Intent intent = new Intent (this, BudgetScreen.class);
         startActivity(intent );
+        //hi
     }
 
 

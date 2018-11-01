@@ -20,7 +20,8 @@
         <activity android:name=".Screen3" />
         <activity android:name=".Termsc" />
         <activity android:name=".Netin" />
-        <activity android:name=".BudgetScreen"></activity>
+        <activity android:name=".BudgetScreen" />
+        <activity android:name=".TrackResults"></activity>
     </application>
 
 </manifest>

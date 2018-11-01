@@ -23,5 +23,15 @@
     <string name="notes_on_budget_will_be_string_display_net_income_here">Notes on Budget will be @string/display_net_income_here</string>
     <string name="budget_spendings">Budget Spendings</string>
     <string name="details_on_budget_will_be_string_display_net_income_here">Details on budget will be @string/display_net_income_here</string>
-
+    <string name="track_your_spendings">Track Your Spendings</string>
+    <string name="directions_on_how_to_track_spendings_here">Directions on how to track spendings here</string>
+    <string name="buttont">Button</string>
+    <string name="type_amount_0_00">Type Amount 0.00</string>
+    <string-array name="names">
+        <item> Earnings</item>
+        <item> Bills</item>
+        <item> Food</item>
+        <item> Personal</item>
+        <item> Gas</item>
+    </string-array>
 </resources>

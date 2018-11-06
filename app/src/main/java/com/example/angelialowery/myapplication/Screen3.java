@@ -9,13 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class Screen3 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    int type1, type2, type3, type4, type5;
+    float type1, type2, type3, type4, type5;
     EditText inp1, inp2, inp3, inp4, inp5;
 
-    Button submit;
+    private Button submit;
+
+    TrackSpendings myExpenses = new TrackSpendings();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,19 +49,28 @@ public class Screen3 extends AppCompatActivity implements AdapterView.OnItemSele
         spinnerrrrr.setAdapter(adapter);
         spinnerrrrr.setOnItemSelectedListener(this);
 
+        submit = (Button) findViewById(R.id.trackbutton);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTrackRes();
+            }
+        });
+
         inp1 = (EditText) findViewById(R.id.inp1);
         inp2 = (EditText) findViewById(R.id.inp2);
         inp3 = (EditText) findViewById(R.id.inp3);
         inp4 = (EditText) findViewById(R.id.inp4);
         inp5 = (EditText) findViewById(R.id.inp5);
         submit = (Button) findViewById(R.id.trackbutton);
-        submit.setOnClickListener(new View.OnClickListener(){
-            @Override
-                    public void onClick(View v){
-                type1 = Integer.valueOf(inp1.getText().toString());
+        //submit.setOnClickListener(new View.OnClickListener(){
+        //    @Override
+        //            public void onClick(View v){
+        //        type1 = Float.valueOf(inp1.getText().toString());
+        //        System.out.println(type1);
 
-            }
-        });
+        //    }
+        //});
 
     }
 
@@ -69,6 +83,10 @@ public class Screen3 extends AppCompatActivity implements AdapterView.OnItemSele
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+    public void openTrackRes(){
+        Intent intent = new Intent (this, TrackResults.class);
+        startActivity(intent );
     }
 
 }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Get Guap</string>
     <string name="get_guap">Get Guap</string>
     <string name="track_spendings">Track Spendings</string>
     <string name="calculate_net_income">Calculate Net Income</string>
@@ -27,6 +27,9 @@
     <string name="directions_on_how_to_track_spendings_here">Directions on how to track spendings here</string>
     <string name="buttont">Button</string>
     <string name="type_amount_0_00">Type Amount 0.00</string>
+    <string name="type_in_your_expected_salary_and_be_sure_to_select_the_state_that_you_will_be_working_in_once_you_have_entered_the_information_correctly_tap_the_calculate_button_and_your_estimated_net_income_will_be_displayed_at_the_bottom_of_the_screen">Type in your expected Salary, and be sure to select the state that you will be working in. Once you have entered the information correctly, tap the Calculate button and your estimated Net Income will be displayed at the bottom of the screen.</string>
+    <string name="calculate">Calculate</string>
+    <string name="below_your_can_enter_in_your_recent_spendings_to_gain_insite_on_how_much_of_your_money_is_going_to_certain_things_the_left_hand_side_has_drop_down_menus_so_you_can_pick_a_category_and_on_the_right_you_can_type_in_the_amount_spent">Below your can enter in your recent spendings to gain insite on how much of your money is going to certain things. The left hand side has drop down menus, so you can pick a category, and on the right you can type in the amount spent.</string>
     <string-array name="names">
         <item> Earnings</item>
         <item> Bills</item>

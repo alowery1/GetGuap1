@@ -12,14 +12,14 @@ public class TrackSpendings {
             spendings.put("Food", 0.0);
             spendings.put("Bills", 0.0);
 
-//            """for (String name : spendings.keySet()) {
+//            for (String name : spendings.keySet()) {
 //                String category = name;
 //                Double spent = spendings.get(name);
 //                System.out.println(category + ": " + spent);
 //            }
         }
 //        public static void main(String args[]){
-
+//
 //            TrackSpendings myExpenses = new TrackSpendings();
 
 //        }

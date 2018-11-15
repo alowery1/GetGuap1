@@ -7,12 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import org.w3c.dom.Text;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
+//import com.mashape.unirest.http.JsonNode; //been here
+//import com.mashape.unirest.http.HttpResponse; //been
+//import com.mashape.unirest.http.Unirest; //been
+import com.mashape.unirest.http.exceptions.UnirestException; //been
 import android.os.AsyncTask;
 import android.util.Log;
+import com.mashape.unirest.http.*;
 
 public class Netin extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class Netin extends AppCompatActivity {
     }
 
     public void testCall(){
+
         //final HttpResponse<JsonNode> response = Unirest.get("http://httpbin.org/get").queryString("Limit",10),asJson();
 
         try {
@@ -54,11 +56,12 @@ public class Netin extends AppCompatActivity {
                     .field("state", "GA")
                     .asJson();
             //response.getBody(); //i just added it
-            Log.e("AppCompatActivity","after the try ");
-            Log.e("AppCompatActivity",response.getBody().toString());
+            Log.v("AppCompatActivity","after the try ");
+           //Log.e("AppCompatActivity",response.getBody().toString());
         } catch (UnirestException e) {
             e.printStackTrace();
         }
+
     }
 
 

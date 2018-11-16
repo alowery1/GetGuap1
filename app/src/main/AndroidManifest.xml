@@ -9,19 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Screen3" />
         <activity android:name=".Termsc" />
         <activity android:name=".Netin" />
         <activity android:name=".BudgetScreen" />
-        <activity android:name=".TrackResults"></activity>
+        <activity android:name=".TrackResults" />
+        <activity android:name=".Track2" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Display2"></activity>
     </application>
 
 </manifest>

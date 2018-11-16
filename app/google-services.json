@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "572905097568",
+    "firebase_url": "https://getguap-269af.firebaseio.com",
+    "project_id": "getguap-269af",
+    "storage_bucket": "getguap-269af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572905097568:android:f4c5797f96f90434",
+        "android_client_info": {
+          "package_name": "com.example.angelialowery.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572905097568-edotogr71lo2n2pmv5ckfnpbq4e2f7ub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.angelialowery.myapplication",
+            "certificate_hash": "a8e2890b9a4c3a9d8d851da4c0293c8b11846351"
+          }
+        },
+        {
+          "client_id": "572905097568-t80m0ieimf4gqou4sautqmapf6ppb70e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBocnRKDnj4v9gCreRD2QQeV3Y_YuuHlQw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572905097568-t80m0ieimf4gqou4sautqmapf6ppb70e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

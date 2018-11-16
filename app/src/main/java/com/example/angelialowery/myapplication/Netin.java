@@ -37,14 +37,15 @@ public class Netin extends AppCompatActivity {
             }
         });
 
-        //testCall();
+      //  testCall();
+
 
     }
 
     public void testCall(){
 
         //final HttpResponse<JsonNode> response = Unirest.get("http://httpbin.org/get").queryString("Limit",10),asJson();
-
+        Log.v("AppCompatActivity","BEFORE the try ");
         try {
             HttpResponse<JsonNode> response = Unirest.post("https://stylinandy-taxee.p.mashape.com/v2/calculate/2018")
                     .header("X-Mashape-Key", "T04ZbUXfKQmshRETTnVWe1LiYF4Jp1epPrYjsnyTjE3ARot3Hz")
@@ -63,6 +64,8 @@ public class Netin extends AppCompatActivity {
         }
 
     }
+
+
 
 
 }

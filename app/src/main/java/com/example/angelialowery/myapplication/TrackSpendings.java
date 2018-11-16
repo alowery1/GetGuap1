@@ -3,14 +3,14 @@ import java.util.HashMap;
 public class TrackSpendings {
 
 
-        HashMap<String, Double> spendings = new HashMap<String, Double>();
+        HashMap<String, Float> spendings = new HashMap<String, Float>();
 
         public TrackSpendings() {
             
-            spendings.put("Personal", 0.0);
-            spendings.put("Transportation", 0.0);
-            spendings.put("Food", 0.0);
-            spendings.put("Bills", 0.0);
+            spendings.put("Personal", 0.0f);
+            spendings.put("Transportation", 0.0f);
+            spendings.put("Food", 0.0f);
+            spendings.put("Bills", 0.0f);
 
 //            for (String name : spendings.keySet()) {
 //                String category = name;

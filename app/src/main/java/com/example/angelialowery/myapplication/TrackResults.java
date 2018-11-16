@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
+import static com.example.angelialowery.myapplication.Track2.myExpenses;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
@@ -17,14 +19,37 @@ import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.util.ArrayList;
 
+
 public class TrackResults extends AppCompatActivity {
     private static String TAG = "TrackResults ";
-    float x = 25.9f;
-    float y = 40.0f;
-    float z = 34.1f;
+    //float x = 25.9f;
+    float y = myExpenses.spendings.get("Transportation");
+    float z = myExpenses.spendings.get("Food");
+    float g = myExpenses.spendings.get("Bills");
+    float x = myExpenses.spendings.get("Personal");
+    //double y = 30.0;
+    //double z = 34.1;
+    //double g = 10.0;
 
-    private float[] yData = {x, y, z};
-    private String[] xData = {"Tyla", "aNGEL", "Jhanae"};
+    //JHANAE: CHANGED TO FLOAT
+    //float a = Track2.a;
+    //float b = Track2.b;
+    //float c = Track2.c;
+    //float d = Track2.d;
+
+    //float a = Track2.myExpenses.spendings.get("Bill");
+    //j = (float)a;
+    //float b = Track2.myExpenses.spendings.get("Transportation");
+    //float c = Track2.myExpenses.spendings.get("Food");
+    //float d = Track2.myExpenses.spendings.get("Personal");
+    private float[] yData = {x, y, z, g};
+
+    //private double[] yData1 = {a, b, c, d};
+    //float m = (float)x;
+    //private float[] yData = {a, b, c, d};
+
+
+    private String[] xData = {"Personal", "Transportation", "Food", "Bills"};
     PieChart pieChart;
 
     @Override
@@ -48,6 +73,17 @@ public class TrackResults extends AppCompatActivity {
                 Log.d(TAG, "onValueSelected: Value Selected from chart.");
                 Log.d(TAG, "onValueSelected: " + e.toString());
                 Log.d(TAG, "onValueSelected: " + h.toString());
+                int pos1 = e.toString().indexOf("y:");
+                String type = e.toString().substring(pos1 + 3);
+
+                for(int ti = 0;ti<yData.length; ti++){
+                    if(yData[ti]==Float.parseFloat(type)){
+                        pos1 = ti;
+                        break;
+                    }
+                }
+                String type2 = xData[pos1];
+                Toast.makeText(TrackResults.this,"Type"+type2 + pos1, Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -64,6 +100,7 @@ public class TrackResults extends AppCompatActivity {
         ArrayList<String> xEntrys = new ArrayList<>();
 
         for(int i = 0; i < yData.length; i++){
+            //yEntrys.add(new PieEntry(yData[i], i));
             yEntrys.add(new PieEntry(yData[i], i));
         }
         for(int i = 1; i < xData.length; i++){
@@ -80,6 +117,9 @@ public class TrackResults extends AppCompatActivity {
         colors.add(Color.MAGENTA);
         colors.add(Color.BLUE);
         colors.add(Color.GREEN);
+        //colors.add(Color.RED);
+        colors.add(Color.YELLOW);
+        pieDataSet.setColors(colors);
 
         //Add legend
         Legend legend = pieChart.getLegend();

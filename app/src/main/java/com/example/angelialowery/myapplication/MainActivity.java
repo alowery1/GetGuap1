@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent );
     }
     public void openScreen3(){
-        Intent intent = new Intent (this, Screen3.class);
+        Intent intent = new Intent (this, Track2.class);
         startActivity(intent);
     }
 

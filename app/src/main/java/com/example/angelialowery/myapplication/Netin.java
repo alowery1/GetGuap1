@@ -34,15 +34,15 @@ public class Netin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 display.setText("Demo number");
+                //testCall();
             }
         });
 
-      //  testCall();
 
 
     }
 
-    public void testCall(){
+    public void testCall() {
 
         //final HttpResponse<JsonNode> response = Unirest.get("http://httpbin.org/get").queryString("Limit",10),asJson();
         Log.v("AppCompatActivity","BEFORE the try ");

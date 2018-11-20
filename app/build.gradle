@@ -30,5 +30,6 @@ dependencies {
     implementation files('libs/unirest-java-1.4.10-SNAPSHOT-jar-with-dependencies.jar')
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-database:16.0.1'
+
 }
 apply plugin: 'com.google.gms.google-services'

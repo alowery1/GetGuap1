@@ -58,7 +58,9 @@ public class SignIn extends AppCompatActivity {
                 users.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.child(user.getUsername()).exists())
+                        if(dataSnapshot.child(user.getPassword()).equals(null))
+                            Toast.makeText(SignIn.this,"Enter a Password.", Toast.LENGTH_SHORT).show();
+                        else if(dataSnapshot.child(user.getUsername()).exists())
                             Toast.makeText(SignIn.this,"The username already exists.", Toast.LENGTH_SHORT).show();
                         else {
                             users.child(user.getUsername()).setValue(user);

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.example.angelialowery.myapplication.Track2.myExpenses;
@@ -27,6 +29,12 @@ public class TrackResults extends AppCompatActivity {
     float z = myExpenses.spendings.get("Food");
     float g = myExpenses.spendings.get("Bills");
     float x = myExpenses.spendings.get("Personal");
+
+    float sum = y + z + g + x;
+    float yp = y/sum*100;
+    float zp = z/sum*100;
+    float gp = g/sum*100;
+    float xp = x/sum*100;
     //double y = 30.0;
     //double z = 34.1;
     //double g = 10.0;
@@ -42,11 +50,8 @@ public class TrackResults extends AppCompatActivity {
     //float b = Track2.myExpenses.spendings.get("Transportation");
     //float c = Track2.myExpenses.spendings.get("Food");
     //float d = Track2.myExpenses.spendings.get("Personal");
-    private float[] yData = {x, y, z, g};
-
-    //private double[] yData1 = {a, b, c, d};
-    //float m = (float)x;
-    //private float[] yData = {a, b, c, d};
+    private float[] yData = {xp, yp, zp, gp};
+    TextView display3;
 
 
     private String[] xData = {"Personal", "Transportation", "Food", "Bills"};

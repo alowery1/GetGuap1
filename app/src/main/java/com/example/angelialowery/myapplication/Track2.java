@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Intent;
+import java.lang.String;
 import android.util.Log;
 
 import org.w3c.dom.Text;

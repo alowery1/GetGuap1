@@ -30,6 +30,7 @@ public class Netin extends AppCompatActivity {
         calcnetbutton = (Button) findViewById(R.id.calcbutton2);
         display = (TextView) findViewById(R.id.incdisplay);
 
+
         calcnetbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

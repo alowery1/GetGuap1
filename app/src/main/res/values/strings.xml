@@ -30,6 +30,8 @@
     <string name="type_in_your_expected_salary_and_be_sure_to_select_the_state_that_you_will_be_working_in_once_you_have_entered_the_information_correctly_tap_the_calculate_button_and_your_estimated_net_income_will_be_displayed_at_the_bottom_of_the_screen">Type in your expected Salary, and be sure to select the state that you will be working in. Once you have entered the information correctly, tap the Calculate button and your estimated Net Income will be displayed at the bottom of the screen.</string>
     <string name="calculate">Calculate</string>
     <string name="below_your_can_enter_in_your_recent_spendings_to_gain_insite_on_how_much_of_your_money_is_going_to_certain_things_the_left_hand_side_has_drop_down_menus_so_you_can_pick_a_category_and_on_the_right_you_can_type_in_the_amount_spent">Below your can enter in your recent spendings to gain insite on how much of your money is going to certain things. The left hand side has drop down menus, so you can pick a category, and on the right you can type in the amount spent.</string>
+    <string name="below_is_piechart_that_will_display_what_percentage_of_your_spendings_went_to_each_category_simply_click_a_section_to_see_the_name_of_the_category">Below is PieChart that will display what percentage of your spendings went to each Category. Simply click a section to see the name of the category.</string>
+    <string name="results_are_in">Results Are In !</string>
     <string-array name="names">
         <item> Bills</item>
         <item> Food</item>

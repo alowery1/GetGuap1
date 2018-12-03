@@ -25,7 +25,6 @@
         <activity android:name=".TrackResults" />
         <activity android:name=".Track2" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".Display2"></activity>
     </application>
 
 </manifest>

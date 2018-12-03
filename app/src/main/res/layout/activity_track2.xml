@@ -5,6 +5,7 @@
     android:id="@+id/track2id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ombre"
     tools:context=".Track2">
 
     <TextView
@@ -13,11 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#828c24"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:text="@string/track_your_spendings"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -25,22 +24,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="343dp"
-        android:layout_height="110dp"
+        android:layout_height="97dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="280dp"
-        android:text="@string/below_your_can_enter_in_your_recent_spendings_to_gain_insite_on_how_much_of_your_money_is_going_to_certain_things_the_left_hand_side_has_drop_down_menus_so_you_can_pick_a_category_and_on_the_right_you_can_type_in_the_amount_spent"
+        android:background="#828c24"
+        android:text="@string/below_your_can_enter_in_your_recent_spendings_to_gain_insite_on_how_much_of_your_money_is_going_to_certain_things_the_left_hand_side_has_drop_down_menus_so_you_can_pick_a_category_and_on_the_right_you_can_type_in_the_amount_spent "
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffff"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/trackbut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.56"

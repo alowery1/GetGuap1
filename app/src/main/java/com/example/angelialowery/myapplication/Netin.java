@@ -11,10 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
-//import com.mashape.unirest.http.JsonNode; //been here
-//import com.mashape.unirest.http.HttpResponse; //been
-//import com.mashape.unirest.http.Unirest; //been
-//import com.mashape.unirest.http.exceptions.UnirestException; //been
 import android.os.AsyncTask;
 import android.util.Log;
 

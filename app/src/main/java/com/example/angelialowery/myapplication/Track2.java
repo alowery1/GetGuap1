@@ -41,8 +41,7 @@ public class Track2 extends AppCompatActivity implements AdapterView.OnItemSelec
 
     static TrackSpendings myExpenses = new TrackSpendings();
 
-    //SOLUTION MIGHT BE TO MAKE SPINNER GLOBAL
-    //Spinner spinner1 = findViewById(R.id.sp1);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +53,7 @@ public class Track2 extends AppCompatActivity implements AdapterView.OnItemSelec
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter);
         spinner1.setOnItemSelectedListener(this);
-        //try {
-        //   spinner.commitEdit();
-        // } catch ( java.text.ParseException e ) { .. }
-        //String spinnerKey = (String) spinner.getValue();
+
 
         final Spinner spinner2 = findViewById(R.id.sp2);
         spinner2.setAdapter(adapter);
@@ -75,14 +71,7 @@ public class Track2 extends AppCompatActivity implements AdapterView.OnItemSelec
         spinner5.setAdapter(adapter);
         spinner5.setOnItemSelectedListener(this);
 
-        //Commented out this repititon
-        /*submit = (Button) findViewById(R.id.trackbutton);
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTrackRes();
-            }
-        });*/
+
 
         inp1 = (EditText) findViewById(R.id.in1);
         inp2 = (EditText) findViewById(R.id.in2);
@@ -137,21 +126,6 @@ public class Track2 extends AppCompatActivity implements AdapterView.OnItemSelec
                 //ADD DOUBLE VALUE TO HASHMAP
                 myExpenses.spendings.put(spinnerKey5, myExpenses.spendings.get(spinnerKey5) + type5);
 
-                //DISPLAY AMOUNT (TEST)
-                //display2.setText(myExpenses.spendings.get(spinnerKey4).toString());
-                //DISPLAY SPINNER VALUE (TEST)
-                //display2.setText(spinnerKey);
-                //DISPLAY ALL VALUES OF HASHMAP
-                //display2.setText(myExpenses.spendings.values().toString());
-
-
-
-                //GET DOUBLE CONVERt TO STRING AND PRINT IN TITLE
-                //String type2 = type1.toString();
-                //display2.setText(type2);
-                //END
-                //int "TAG" = Log.d("TAG", String.format(Locale.US, "Value = %f", inp1));
-                //myExpenses.put(spinnerKey, type1);
 
                 //FROM JHANAE: DONT NEED THE VARIABLES BELOW. type1..type5 ARE THE SAME THING
                 a = myExpenses.spendings.get("Bill");
@@ -168,7 +142,7 @@ public class Track2 extends AppCompatActivity implements AdapterView.OnItemSelec
 
         });
 
-        //Log.v("End", type1.toString());
+
     }
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
